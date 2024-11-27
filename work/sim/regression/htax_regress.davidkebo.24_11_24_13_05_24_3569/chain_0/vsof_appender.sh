@@ -1,0 +1,2 @@
+#!/bin/sh
+unset PYTHONPATH;unset PYTHONHOME; /opt/coe/cadence/VMANAGER/tools/vmgr/runner/../python/bin/python /opt/coe/cadence/VMANAGER/tools/vmgr/runner/python/scripts/append_chunk.py -vsof /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/htax_regress.vsof -runs_data_dir /home/vmanager/vmgr_profile/chunks/projects/vmgr -session_name htax_regress.davidkebo.24_11_24_13_05_24_3569 -vsof_chunk $* -chain_dir /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0

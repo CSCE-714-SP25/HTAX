@@ -1,0 +1,13 @@
+session_output htax_regress.davidkebo.24_11_24_13_05_24_3569 {
+	failure Cuda {
+		description: <text>Error while calculating cuda: b'<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>\n<title>Error 504 Failed to start vAPI/Agent to serve your request.  The system failed to start the process within the timeout specified. There might be a problem with how vAPI/Agents are set to start.  Check within the vAPI/Agents logs for the exact reason: Proxy timeout with 120 seconds</title>\n</head>\n<body><h2>HTTP ERROR 504</h2>\n<p>Problem accessing /vmgr/hmac/vapi/rest/sessions/recalculate-uda-scripts. Reason:\n<pre>    Failed to start vAPI/Agent to serve your request.  The system failed to start the process within the timeout specified. There might be a problem with how vAPI/Agents are set to start.  Check within the vAPI/Agents logs for the exact reason: Proxy timeout with 120 seconds</pre></p><hr><a href="http://eclipse.org/jetty">Powered by Jetty:// 9.4.14.v20181114</a><hr/>\n\n</body>\n</html>\n'</text>;
+		severity: <text>warning</text>;
+		reference: <text>5@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/post_session.log</text>;
+		failure_source_type_vmgr: <text>post_session</text>;
+	}
+}
+session_output htax_regress.davidkebo.24_11_24_13_05_24_3569 {
+	session_status: <text>post_session_script_done</text>;
+	session_end_time: <text>1732475375</text>;
+	done_chain_id_vmgr: <text>0</text>;
+}

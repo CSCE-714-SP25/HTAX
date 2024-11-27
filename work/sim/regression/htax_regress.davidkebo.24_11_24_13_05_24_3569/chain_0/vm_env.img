@@ -1,0 +1,228 @@
+SLURM_JOB_GROUP=davidkebo
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+LD_LIBRARY_PATH=/opt/coe/cadence/VMANAGER/tools.lnx86/lib/64bit:/opt/coe/cadence/XCELIUM/tools.lnx86/lib/64bit:/opt/coe/cadence/JASPERGOLD240/lib/:/opt/coe/cadence/JASPERGOLD240/lib64/:/opt/coe/cadence/VIPCAT/lib/:/opt/coe/cadence/VIPCAT/lib64/
+SRUN_DEBUG=3
+SLURM_STEP_ID=0
+SLURM_NODEID=0
+SLURM_TASK_PID=3391813
+SSH_CONNECTION=172.31.18.152 51520 128.194.17.175 22
+SLURM_PRIO_PROCESS=0
+CDC_PREW2KHOST=olympus
+SLURM_CPU_BIND_VERBOSE=quiet
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+LANG=en_US.UTF-8
+SLURM_SUBMIT_DIR=/home/faculty/d/davidkebo/csce-714/HTAX
+HISTCONTROL=ignoredups
+DISPLAY=localhost:79.0
+GUESTFISH_RESTORE=\e[0m
+HISTTIMEFORMAT=%F %T:%F %T
+HOSTNAME=n01-zeus.olympus.ece.tamu.edu
+OLDPWD=/home/faculty/d/davidkebo/csce-714/HTAX
+SLURM_CPUS_PER_TASK=2
+C_INCLUDE_PATH=/opt/coe/cadence/JASPERGOLD240/include/:/opt/coe/cadence/VIPCAT/include/
+SLURM_STEPID=0
+SLURM_SRUN_COMM_HOST=192.168.2.3
+VMANAGER_WRITE_METRICS_RUNNER=ALL
+CDC_JOINED_ZONE=CN=Login_Nodes,CN=HPC,CN=Global,CN=Zones,OU=Centrify,OU=Services,DC=engr,DC=tamu,DC=edu
+GUESTFISH_INIT=\e[1;34m
+SLURM_PROCID=0
+SLURM_JOB_GID=421004447
+VM_CDN_TOOLS_LIB64=/opt/coe/cadence/VMANAGER/tools/lib/64bit
+CDC_LOCALHOST=olympus.engr.tamu.edu
+SLURM_CPU_BIND=quiet,mask_cpu:0x0800008000
+SLURMD_NODENAME=n01-zeus
+SLURM_JOB_END_TIME=1732518002
+SLURM_TASKS_PER_NODE=1
+VMGR_APPLICATION_NAME=vmanager
+which_declare=declare -f
+XDG_SESSION_ID=220484
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+USER=davidkebo
+SLURM_NNODES=1
+SLURM_LAUNCH_NODE_IPADDR=192.168.2.3
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+IMC_INST_DIR=/opt/coe/cadence/VMANAGER
+VRST_HOME=/opt/coe/cadence/VMANAGER
+VM_CDN_TOOLS_LIB=/opt/coe/cadence/VMANAGER/tools/lib
+SLURM_STEP_TASKS_PER_NODE=1
+SLURM_JOB_START_TIME=1732474802
+SELINUX_ROLE_REQUESTED=
+PWD=/home/faculty/d/davidkebo/csce-714/HTAX/work/sim
+SLURM_JOB_NODELIST=n01-zeus
+HOME=/home/faculty/d/davidkebo
+SLURM_CLUSTER_NAME=olympus
+SLURM_NODELIST=n01-zeus
+SSH_CLIENT=172.31.18.152 51520 22
+CDS_SITE=localhost
+SLURM_NTASKS=1
+SLURM_UMASK=0002
+SELINUX_LEVEL_REQUESTED=
+KRB5CCNAME=FILE:/tmp/krb5cc_421004447
+VMANAGER_ARCH=linux64
+SLURM_JOB_CPUS_PER_NODE=2
+EP_HOME=/opt/coe/cadence/VMANAGER/tools/vmgr/runner
+CDS_ROOT=/opt/coe/cadence/VMANAGER
+VMANAGER_HOME=/opt/coe/cadence/VMANAGER/tools/vmgr/runner
+CDS_INST_DIR=/opt/coe/cadence/VMANAGER
+VM_SCAN_HOME=/opt/coe/cadence/VMANAGER/tools/vmgr/runner
+SLURM_TOPOLOGY_ADDR=n01-zeus
+SN_CDN_PRODUCT_ARCH=linux64
+VM_CDN_PRODUCT_HOME=/opt/coe/cadence/VMANAGER/tools/vmgr/runner
+SLURMD_DEBUG=2
+SLURM_WORKING_CLUSTER=olympus:olympus.ece.tamu.edu:6817:9984:109
+VMANAGER_CS=1
+SLURM_STEP_NODELIST=n01-zeus
+SLURM_JOB_NAME=csce-616
+SLURM_SRUN_COMM_PORT=43349
+TMPDIR=/tmp
+W3264_NO_HOST_CHECK=1
+SLURM_JOBID=47319
+SLURM_CONF=/etc/slurm/slurm.conf
+LOADEDMODULES=
+SLURM_JOB_QOS=olympus-academic
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SSH_TTY=/dev/pts/93
+DA_SESSION_ID_AUTH=cdb20e65-6f89-e247-a611-f5e93d6766f9
+MAIL=/var/spool/mail/davidkebo
+IC=/opt/coe/cadence/VMANAGER
+SLURM_CPUS_ON_NODE=2
+SLURM_JOB_NUM_NODES=1
+CDS_LIC_FILE=5280@coe-vtls2.engr.tamu.edu
+TERM=xterm-256color
+SHELL=/bin/bash
+SN_CDN_PRODUCT_HOME=/opt/coe/cadence/VMANAGER/tools/vmgr/runner
+SLURM_JOB_UID=421004447
+SLURM_JOB_PARTITION=adademic
+SLURM_PTY_WIN_ROW=42
+SELINUX_USE_CURRENT_RANGE=
+SLURM_CPU_BIND_LIST=0x0800008000
+SLURM_JOB_USER=davidkebo
+SLURM_PTY_WIN_COL=95
+SLURM_NPROCS=1
+CDC_JOINED_DC=ops1.engr.tamu.edu
+SHLVL=3
+SLURM_SUBMIT_HOST=olympus.ece.tamu.edu
+SLURM_JOB_ACCOUNT=all
+CDC_JOINED_DOMAIN=engr.tamu.edu
+MANPATH=::/opt/coe/cadence/JASPERGOLD240/man/:/opt/coe/cadence/VIPCAT/man/
+UVMHOME=/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv
+CDS=/opt/coe/cadence/VMANAGER
+SLURM_STEP_LAUNCHER_PORT=43349
+MDV_XLM_HOME=/opt/coe/cadence/XCELIUM
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/local/modules:/opt/intel/oneapi/modulefiles:/usr/local/modules:/opt/intel/oneapi/modulefiles
+SLURM_PTY_PORT=35773
+SLURM_GTIDS=0
+LOGNAME=davidkebo
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/421004447/bus
+XDG_RUNTIME_DIR=/run/user/421004447
+XAUTHORITY=/tmp/.Xauthority-ymiTtz
+PATH=/opt/coe/cadence/VMANAGER/vmgr/rr_bin:/opt/coe/cadence/XCELIUM/bin:/opt/coe/cadence/XCELIUM/tools/bin:/opt/coe/cadence/VMANAGER/bin:/opt/coe/cadence/VMANAGER/tools/bin:/opt/coe/cadence/VMANAGER/tools/dfII/bin:/opt/coe/cadence/VMANAGER/tools/plot/bin:/opt/coe/cadence/VMANAGER/tools/cdsgcc/gcc/bin:/opt/coe/cadence/VMANAGER/tools.lnx86/bin:/opt/coe/cadence/XCELIUM/tools/bin:/opt/coe/cadence/XCELIUM/tools/dfII/bin:/opt/coe/cadence/XCELIUM/tools/plot/bin:/opt/coe/cadence/XCELIUM/tools/cdsgcc/gcc/bin:/opt/coe/cadence/XCELIUM/tools.lnx86/bin:/opt/coe/matlab/R2022b/bin:/opt/coe/bin:/usr/share/Modules/bin:/opt/coe/matlab/R2022b/bin:/opt/coe/bin:/home/faculty/d/davidkebo/.local/bin:/home/faculty/d/davidkebo/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/coe/cadence/JASPERGOLD240/bin/:/opt/coe/cadence/VIPCAT/bin/
+SLURM_JOB_ID=47319
+SLURM_CPU_BIND_TYPE=mask_cpu:
+GUESTFISH_OUTPUT=\e[0m
+SLURM_STEP_NUM_TASKS=1
+MODULESHOME=/usr/share/Modules
+HISTSIZE=1000
+SLURM_STEP_NUM_NODES=1
+USER_PRINCIPAL_NAME=davidkebo@AUTH.TAMU.EDU
+CDC_JOINED_SITE=TAMU
+SLURM_LOCALID=0
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1
+}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+BASH_FUNC_ml%%=() {  module ml "$@"
+}
+_=/usr/bin/printenv
+XLM_HOME_NOTATION=/opt/coe/cadence/XCELIUM
+VMGR_PROJECT=vmgr
+VMGR_REGION=default
+RR_SERVER_PORT=8081
+VMGR_USERNAME=davidkebo
+RR_SERVER_HOST=192.168.2.4
+VMGR_REGION_ROUTE_POLICY=LOCAL
+VMGR_RUNNER_SESSION_OWNER=davidkebo

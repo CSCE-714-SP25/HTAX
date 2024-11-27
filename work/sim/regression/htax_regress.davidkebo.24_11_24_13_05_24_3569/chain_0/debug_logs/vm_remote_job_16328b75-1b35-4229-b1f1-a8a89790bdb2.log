@@ -1,0 +1,14 @@
+2024-11-24 13:06:56,376 - __main__             - INFO    : Starting remote job on n01-zeus.olympus.ece.tamu.edu. pid: 3412049
+2024-11-24 13:06:56,546 - runner               - INFO    : Initializing RUN phase
+2024-11-24 13:06:56,546 - runner               - INFO    : Run id: 11
+2024-11-24 13:06:56,546 - runner               - INFO    : Setting up environment
+2024-11-24 13:06:58,088 - RUN                  - INFO    : Initializing run phase
+2024-11-24 13:06:58,137 - RUN                  - INFO    : Starting run phase
+2024-11-24 13:06:58,137 - RUN                  - INFO    : Debug log file: /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/debug_logs/vm_remote_job_16328b75-1b35-4229-b1f1-a8a89790bdb2.log
+2024-11-24 13:06:58,137 - RUN                  - INFO    : Running run no. 11
+2024-11-24 13:06:58,137 - RUN                  - INFO    : Timeout is set to 13000000 seconds
+2024-11-24 13:06:58,137 - RUN                  - INFO    : Executing run script: "cd /home/faculty/d/davidkebo/csce-714/HTAX/work/sim ; xrun -f run_vm.f +UVM_TESTNAME=random_test -define TEST7"
+2024-11-24 13:07:03,305 - RUN                  - INFO    : Starting scanning
+2024-11-24 13:07:03,919 - RUN                  - INFO    : Run done.
+2024-11-24 13:07:04,067 - remote.job_executor  - INFO    : Job finished with exit code: 0
+2024-11-24 13:07:04,084 - __main__             - INFO    : Done

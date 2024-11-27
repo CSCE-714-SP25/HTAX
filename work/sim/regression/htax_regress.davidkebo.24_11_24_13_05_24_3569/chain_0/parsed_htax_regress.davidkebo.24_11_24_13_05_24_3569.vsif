@@ -1,0 +1,55 @@
+session htax_regress {
+	name : "htax_regress.davidkebo.24_11_24_13_05_24_3569";
+	pre_session_script : <text> echo "pre_session_script" </text>;
+	top_dir : "$ENV(PWD)/regression/";
+};
+group all_test {
+	count : "1";
+	pre_commands : "";
+	run_script : <text>cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=simple_random_test</text>;
+	scan_script : "vm_scan.pl ius.flt shell.flt";
+	sv_seed : "random";
+	timeout : "13000000";
+	test test1 {
+		count : "1";
+		estimated_duration_vmgr : "13000000";
+		run_script : <text>cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=simple_random_test -define TEST1</text>;
+		scan_script : "vm_scan.pl ius.flt shell.flt";
+	};
+	test test2 {
+		count : "1";
+		estimated_duration_vmgr : "13000000";
+		run_script : <text>cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=simple_random_test -define TEST2</text>;
+		scan_script : "vm_scan.pl ius.flt shell.flt";
+	};
+	test test3 {
+		count : "1";
+		estimated_duration_vmgr : "13000000";
+		run_script : <text>cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=simple_random_test -define TEST3</text>;
+		scan_script : "vm_scan.pl ius.flt shell.flt";
+	};
+	test test4 {
+		count : "1";
+		estimated_duration_vmgr : "13000000";
+		run_script : <text>cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=simple_random_test -define TEST4</text>;
+		scan_script : "vm_scan.pl ius.flt shell.flt";
+	};
+	test test5 {
+		count : "1";
+		estimated_duration_vmgr : "13000000";
+		run_script : <text>cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=simple_random_test -define TEST5</text>;
+		scan_script : "vm_scan.pl ius.flt shell.flt";
+	};
+	test test6 {
+		count : "5";
+		estimated_duration_vmgr : "13000000";
+		run_script : <text>cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=multiport_sequential_random_test -define TEST6</text>;
+		scan_script : "vm_scan.pl ius.flt shell.flt";
+	};
+	test test7 {
+		count : "5";
+		estimated_duration_vmgr : "13000000";
+		run_script : <text>cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=random_test -define TEST7</text>;
+		scan_script : "vm_scan.pl ius.flt shell.flt";
+	};
+};

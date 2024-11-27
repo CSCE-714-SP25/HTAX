@@ -1,0 +1,16 @@
+Nov 24, 2024 1:09:37 PM com.cadence.mdv.scripts.vmgrautomation main
+INFO: ### Automation connection details: 192.168.2.4:8081:vmgr, session-id=163, wait=true, timeout=true
+Nov 24, 2024 1:09:37 PM com.cadence.mdv.scripts.vmgrautomation main
+INFO: session Status is complete [try #1 ]
+Starting automation
+running session automation
+running client automation
+command: /opt/coe/cadence/VMANAGER/tools/vmgr/admin/../server/../../bin/vmanager -cs -server 192.168.2.4:8081 -exec /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/session.auto.tcl -regr
+Cadence vManager(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems Inc - Simulator version: 22.03-s012 - Coverage engine version: 22.03-s012
+Starting batch mode
+Loading sessions: 
+ htax_regress.davidkebo.24_11_24_13_05_24_3569 
+Done.
+*I,MERGL1: The merged icc coverage cache was not reused due to different configuration or set of runs.
+
+automation done with exit code : 0

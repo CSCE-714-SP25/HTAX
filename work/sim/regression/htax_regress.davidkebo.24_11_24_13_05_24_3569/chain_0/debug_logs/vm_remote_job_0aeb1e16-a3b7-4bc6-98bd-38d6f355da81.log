@@ -1,0 +1,19 @@
+2024-11-24 13:07:34,531 - __main__             - INFO    : Starting remote job on n01-zeus.olympus.ece.tamu.edu. pid: 3420576
+2024-11-24 13:07:34,691 - runner               - INFO    : Initializing POST_SESSION phase
+2024-11-24 13:07:34,692 - runner               - INFO    : Setting up environment
+2024-11-24 13:07:35,179 - POST_SESSION         - INFO    : Initializing post_session phase
+2024-11-24 13:07:35,210 - POST_SESSION         - INFO    : Starting post_session phase
+2024-11-24 13:07:35,211 - POST_SESSION         - INFO    : Debug log file: /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/debug_logs/vm_remote_job_0aeb1e16-a3b7-4bc6-98bd-38d6f355da81.log
+2024-11-24 13:07:35,211 - POST_SESSION         - INFO    : Calculating CUDA
+2024-11-24 13:09:35,240 - POST_SESSION         - WARNING : Error while calculating cuda: b'<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>\n<title>Error 504 Failed to start vAPI/Agent to serve your request.  The system failed to start the process within the timeout specified. There might be a problem with how vAPI/Agents are set to start.  Check within the vAPI/Agents logs for the exact reason: Proxy timeout with 120 seconds</title>\n</head>\n<body><h2>HTTP ERROR 504</h2>\n<p>Problem accessing /vmgr/hmac/vapi/rest/sessions/recalculate-uda-scripts. Reason:\n<pre>    Failed to start vAPI/Agent to serve your request.  The system failed to start the process within the timeout specified. There might be a problem with how vAPI/Agents are set to start.  Check within the vAPI/Agents logs for the exact reason: Proxy timeout with 120 seconds</pre></p><hr><a href="http://eclipse.org/jetty">Powered by Jetty:// 9.4.14.v20181114</a><hr/>\n\n</body>\n</html>\n'
+2024-11-24 13:09:35,252 - phases.phase         - INFO    : Traceback (most recent call last):
+  File "/opt/coe/cadence/VMANAGER/tools/vmgr/jobs_manager/python/../../runner/python/phases/session_phases.py", line 83, in _calc_cuda
+    "values": [self._context.session_name]
+  File "/opt/coe/cadence/VMANAGER/tools/vmgr/jobs_manager/python/../../runner/python/services/vapi.py", line 54, in calc_cuda
+    return self.call_vapi_cmd(command, 'POST', data)
+  File "/opt/coe/cadence/VMANAGER/tools/vmgr/jobs_manager/python/../../runner/python/services/vapi.py", line 48, in call_vapi_cmd
+    raise Exception(response.content)
+Exception: b'<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>\n<title>Error 504 Failed to start vAPI/Agent to serve your request.  The system failed to start the process within the timeout specified. There might be a problem with how vAPI/Agents are set to start.  Check within the vAPI/Agents logs for the exact reason: Proxy timeout with 120 seconds</title>\n</head>\n<body><h2>HTTP ERROR 504</h2>\n<p>Problem accessing /vmgr/hmac/vapi/rest/sessions/recalculate-uda-scripts. Reason:\n<pre>    Failed to start vAPI/Agent to serve your request.  The system failed to start the process within the timeout specified. There might be a problem with how vAPI/Agents are set to start.  Check within the vAPI/Agents logs for the exact reason: Proxy timeout with 120 seconds</pre></p><hr><a href="http://eclipse.org/jetty">Powered by Jetty:// 9.4.14.v20181114</a><hr/>\n\n</body>\n</html>\n'
+
+2024-11-24 13:09:55,000 - remote.job_executor  - INFO    : Job finished with exit code: 0
+2024-11-24 13:09:55,011 - __main__             - INFO    : Done

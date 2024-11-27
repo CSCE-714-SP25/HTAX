@@ -1,0 +1,9 @@
+2024-11-24 13:05:41,107 - __main__             - INFO    : Starting remote job on n01-zeus.olympus.ece.tamu.edu. pid: 3394321
+2024-11-24 13:05:41,436 - runner               - INFO    : Initializing PRE_SESSION phase
+2024-11-24 13:05:41,436 - runner               - INFO    : Setting up environment
+2024-11-24 13:05:42,027 - PRE_SESSION          - INFO    : Initializing pre_session phase
+2024-11-24 13:05:42,065 - PRE_SESSION          - INFO    : Starting pre_session phase
+2024-11-24 13:05:42,065 - PRE_SESSION          - INFO    : Debug log file: /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/debug_logs/vm_remote_job_541533df-156e-42fe-bf53-3625ac67ca5f.log
+2024-11-24 13:05:42,066 - PRE_SESSION          - INFO    : Executing pre session script:  echo "pre_session_script"
+2024-11-24 13:05:42,102 - remote.job_executor  - INFO    : Job finished with exit code: 0
+2024-11-24 13:05:42,129 - __main__             - INFO    : Done

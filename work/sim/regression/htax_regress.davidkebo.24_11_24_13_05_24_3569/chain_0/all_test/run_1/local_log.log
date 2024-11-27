@@ -1,0 +1,1376 @@
+RUN - INFO - Initializing run phase
+RUN - INFO - Starting run phase
+RUN - INFO - Debug log file: /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/debug_logs/vm_remote_job_e50eefe7-d657-4272-9357-694252e80723.log
+RUN - INFO - Running run no. 1
+RUN - INFO - Timeout is set to 13000000 seconds
+RUN - INFO - Executing run script: "cd /home/faculty/d/davidkebo/csce-714/HTAX/work/sim ; xrun -f run_vm.f +UVM_TESTNAME=simple_random_test -define TEST1"
+TOOL:	xrun	22.03-s012: Started on Nov 24, 2024 at 13:05:44 CST
+xrun: 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv
+Writing initial vsof to /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_1/.SRvSof/xmvlog_2024_11_24_13_05_45.vsof
+file: ../tb/htax_defines.sv
+file: ../tb/htax_rx_interface.sv
+xmvlog: *W,SPDUSD: Include directory ../design given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+Writing initial vsof to /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_1/cov_work/scope/test/cdns_sim.vsof
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		htax_pkg
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.htax_combinatoric_arbiter
+		worklib.htax_outport_arbiter
+		worklib.htax_outport_data_mux
+		worklib.htax_top
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: ...
+xmelab: *W,STRINT (/home/grads/s/sushan_1201/lab-10-solution/work/tb/htax_rx_interface.sv,56|94): String literal argument supplied to integer parameter.
+.......
+xmelab: *W,COVUCC (/home/grads/s/sushan_1201/lab-10-solution/work/tb/htax_env.sv,1|13): Block and Expression coverage types are not supported inside SystemVerilog classes. Use CCF command to enable type-based block and expression control coverage. There may also be other such classes in the design.
+.......... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.htax_outport_data_mux:v <0x6e8e6af1>
+			streams:   9, words:  6631
+		worklib.htax_combinatoric_arbiter:v <0x4c19f820>
+			streams:  16, words:  5015
+		worklib.htax_outport_arbiter:v <0x686c18dd>
+			streams:  11, words:  3712
+		worklib.htax_top:v <0x68153d47>
+			streams:  28, words: 19127
+		worklib.top:sv <0x400146ee>
+			streams: 1220, words: 1176336
+		worklib.htax_tx_interface:sv <0x70454e65>
+			streams:  50, words: 38904
+		worklib.htax_rx_interface:sv <0x10188196>
+			streams:  20, words: 11923
+		worklib.cdns_uvm_pkg:sv <0x5f281270>
+			streams: 179, words: 232018
+		worklib.cdns_uvmapi:svp <0x5d595cc2>
+			streams:  27, words: 24629
+		worklib.cdns_assert2uvm_pkg:sv <0x6b4b1057>
+			streams:   3, words:  1329
+		worklib.uvm_pkg:sv <0x6d52db8a>
+			streams: 5100, words: 6253393
+xmelab: *W,COVMDD (/home/grads/s/sushan_1201/lab-10-solution/work/design/htax_outport_arbiter.v,60|20): Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.
+xmelab: *W,COVUTA (/home/grads/s/sushan_1201/lab-10-solution/work/tb/htax_rx_interface.sv,22|25): Toggle coverage is not supported for SystemVerilog integer, real, string, dynamic array, sparse memory and reference ports. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.
+	Building instance specific data structures.
+xmelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                      14       5
+		Interfaces:                    8       2
+		Verilog packages:              5       5
+		Registers:                 15673   10702
+		Scalar wires:                159       -
+		Vectored wires:              108       -
+		Named events:                 56      25
+		Always blocks:               374      98
+		Initial blocks:              426     194
+		Parallel blocks:              27      28
+		Cont. assignments:            89      56
+		Pseudo assignments:           57      57
+		Assertions:                   54      15
+		Covergroup Instances:          0       4
+		SV Class declarations:       218     332
+		SV Class specializations:    424     424
+		Simulation timescale:        1ns
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED set randomly from command line: 145560361
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Writing initial vsof to /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_1/.SRvSof/xmsim_2024_11_24_13_05_52.vsof
+xcelium> source /opt/coe/cadence/XCELIUM/tools/xcelium/files/xmsimrc
+xcelium> source /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/files/tcl/uvm_sim.tcl
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create top -all -memories -depth all -tasks -functions -all -database waves -waveform
+xmsim: *W,PRFRTNEV: (-FUNCTION) Database must be opened in -EVENT mode to capture calling scope data.
+Created probe 1
+xcelium> 
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (22.03-s012)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO ../tb/htax_top.sv(101) @ 0: reporter [TOP] Starting simple random test
+UVM_INFO @ 0: reporter [RNTST] Running test simple_random_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+-------------------------------------------------------------------------
+Name                       Type                         Size  Value      
+-------------------------------------------------------------------------
+uvm_test_top               simple_random_test           -     @2764      
+  tb                       htax_env                     -     @2834      
+    htax_sb                htax_scoreboard_c            -     @3159      
+      rx0_export           uvm_analysis_imp_rx0_export  -     @3410      
+      rx1_export           uvm_analysis_imp_rx1_export  -     @3461      
+      rx2_export           uvm_analysis_imp_rx2_export  -     @3510      
+      rx3_export           uvm_analysis_imp_rx3_export  -     @3559      
+      tx0_export           uvm_analysis_imp_tx0_export  -     @3212      
+      tx1_export           uvm_analysis_imp_tx1_export  -     @3263      
+      tx2_export           uvm_analysis_imp_tx2_export  -     @3312      
+      tx3_export           uvm_analysis_imp_tx3_export  -     @3361      
+    rx_port[0]             htax_rx_agent_c              -     @3039      
+      rx_monitor           htax_rx_monitor_c            -     @4243      
+        rx_collect_port    uvm_analysis_port            -     @4296      
+      is_active            uvm_active_passive_enum      1     UVM_PASSIVE
+    rx_port[1]             htax_rx_agent_c              -     @3069      
+      rx_monitor           htax_rx_monitor_c            -     @4343      
+        rx_collect_port    uvm_analysis_port            -     @4391      
+      is_active            uvm_active_passive_enum      1     UVM_PASSIVE
+    rx_port[2]             htax_rx_agent_c              -     @3099      
+      rx_monitor           htax_rx_monitor_c            -     @4436      
+        rx_collect_port    uvm_analysis_port            -     @4484      
+      is_active            uvm_active_passive_enum      1     UVM_PASSIVE
+    rx_port[3]             htax_rx_agent_c              -     @3129      
+      rx_monitor           htax_rx_monitor_c            -     @4529      
+        rx_collect_port    uvm_analysis_port            -     @4577      
+      is_active            uvm_active_passive_enum      1     UVM_PASSIVE
+    tx_port[0]             htax_tx_agent_c              -     @2919      
+      sequencer            htax_sequencer_c             -     @4849      
+        rsp_export         uvm_analysis_export          -     @4907      
+        seq_item_export    uvm_seq_item_pull_imp        -     @5455      
+        arbitration_queue  array                        0     -          
+        lock_queue         array                        0     -          
+        num_last_reqs      integral                     32    'd1        
+        num_last_rsps      integral                     32    'd1        
+      tx_driver            htax_tx_driver_c             -     @4718      
+        rsp_port           uvm_analysis_port            -     @4818      
+        seq_item_port      uvm_seq_item_pull_port       -     @4767      
+      tx_monitor           htax_tx_monitor_c            -     @4627      
+        tx_collect_port    uvm_analysis_port            -     @4674      
+      is_active            uvm_active_passive_enum      1     UVM_ACTIVE 
+    tx_port[1]             htax_tx_agent_c              -     @2949      
+      sequencer            htax_sequencer_c             -     @5727      
+        rsp_export         uvm_analysis_export          -     @5782      
+        seq_item_export    uvm_seq_item_pull_imp        -     @6322      
+        arbitration_queue  array                        0     -          
+        lock_queue         array                        0     -          
+        num_last_reqs      integral                     32    'd1        
+        num_last_rsps      integral                     32    'd1        
+      tx_driver            htax_tx_driver_c             -     @5601      
+        rsp_port           uvm_analysis_port            -     @5697      
+        seq_item_port      uvm_seq_item_pull_port       -     @5649      
+      tx_monitor           htax_tx_monitor_c            -     @5511      
+        tx_collect_port    uvm_analysis_port            -     @5559      
+      is_active            uvm_active_passive_enum      1     UVM_ACTIVE 
+    tx_port[2]             htax_tx_agent_c              -     @2979      
+      sequencer            htax_sequencer_c             -     @6587      
+        rsp_export         uvm_analysis_export          -     @6642      
+        seq_item_export    uvm_seq_item_pull_imp        -     @7182      
+        arbitration_queue  array                        0     -          
+        lock_queue         array                        0     -          
+        num_last_reqs      integral                     32    'd1        
+        num_last_rsps      integral                     32    'd1        
+      tx_driver            htax_tx_driver_c             -     @6461      
+        rsp_port           uvm_analysis_port            -     @6557      
+        seq_item_port      uvm_seq_item_pull_port       -     @6509      
+      tx_monitor           htax_tx_monitor_c            -     @6371      
+        tx_collect_port    uvm_analysis_port            -     @6419      
+      is_active            uvm_active_passive_enum      1     UVM_ACTIVE 
+    tx_port[3]             htax_tx_agent_c              -     @3009      
+      sequencer            htax_sequencer_c             -     @7447      
+        rsp_export         uvm_analysis_export          -     @7502      
+        seq_item_export    uvm_seq_item_pull_imp        -     @8042      
+        arbitration_queue  array                        0     -          
+        lock_queue         array                        0     -          
+        num_last_reqs      integral                     32    'd1        
+        num_last_rsps      integral                     32    'd1        
+      tx_driver            htax_tx_driver_c             -     @7321      
+        rsp_port           uvm_analysis_port            -     @7417      
+        seq_item_port      uvm_seq_item_pull_port       -     @7369      
+      tx_monitor           htax_tx_monitor_c            -     @7231      
+        tx_collect_port    uvm_analysis_port            -     @7279      
+      is_active            uvm_active_passive_enum      1     UVM_ACTIVE 
+    vsequencer             htax_virtual_sequencer_c     -     @3539      
+      rsp_export           uvm_analysis_export          -     @3647      
+      seq_item_export      uvm_seq_item_pull_imp        -     @4197      
+      arbitration_queue    array                        0     -          
+      lock_queue           array                        0     -          
+      num_last_reqs        integral                     32    'd1        
+      num_last_rsps        integral                     32    'd1        
+-------------------------------------------------------------------------
+
+UVM_INFO ../test/simple_random_test.sv(25) @ 0: uvm_test_top [simple_random_test] Starting Simple Random Sequence Test
+UVM_INFO ../tb/htax_seqs.sv(18) @ 0: uvm_test_top.tb.tx_port[1].sequencer@@simple_random_seq [simple_random_seq] raise_objection
+UVM_INFO ../tb/htax_seqs.sv(42) @ 0: uvm_test_top.tb.tx_port[1].sequencer@@simple_random_seq [simple_random_seq] Executing simple random sequence with 5 transactions
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 5: uvm_test_top.tb.tx_port[3].tx_driver [TOP] Resetting the DUT synchronously
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 5: uvm_test_top.tb.tx_port[2].tx_driver [TOP] Resetting the DUT synchronously
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 5: uvm_test_top.tb.tx_port[1].tx_driver [TOP] Resetting the DUT synchronously
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 5: uvm_test_top.tb.tx_port[0].tx_driver [TOP] Resetting the DUT synchronously
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 10: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8379                                                 
+  delay                        integral       32    'h5                                                   
+  dest_port                    integral       32    'h2                                                   
+  vc                           integral       2     'h3                                                   
+  length                       integral       32    'h12                                                  
+  data                         da(integral)   18    -                                                     
+    [0]                        integral       64    'h51a0a37d233f6f3f                                    
+    [1]                        integral       64    'h516da48aad9194dc                                    
+    [2]                        integral       64    'h775db3ac3aba79cb                                    
+    [3]                        integral       64    'h3df9c61662a6033a                                    
+    [4]                        integral       64    'hab300cb31efdb340                                    
+    ...                        ...            ...   ...                                                   
+    [13]                       integral       64    'hda652dda520175e1                                    
+    [14]                       integral       64    'h5bd887ab7e81271a                                    
+    [15]                       integral       64    'he5a59e15b182576                                     
+    [16]                       integral       64    'haedc33c897264b96                                    
+    [17]                       integral       64    'h7f04fd2b35a18a9a                                    
+  begin_time                   time           64    10                                                    
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h2               
+  vc                  integral              2     'h3               
+  length              integral              32    'h12              
+  data                da(integral)          18    -                 
+    [0]               integral              64    'h51a0a37d233f6f3f
+    [1]               integral              64    'h516da48aad9194dc
+    [2]               integral              64    'h775db3ac3aba79cb
+    [3]               integral              64    'h3df9c61662a6033a
+    [4]               integral              64    'hab300cb31efdb340
+    ...               ...                   ...   ...               
+    [13]              integral              64    'hda652dda520175e1
+    [14]              integral              64    'h5bd887ab7e81271a
+    [15]              integral              64    'he5a59e15b182576 
+    [16]              integral              64    'haedc33c897264b96
+    [17]              integral              64    'h7f04fd2b35a18a9a
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(87) @ 550: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 2:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 550: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 550: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8313                                                 
+  delay                        integral       32    'he                                                   
+  dest_port                    integral       32    'h0                                                   
+  vc                           integral       2     'h1                                                   
+  length                       integral       32    'h2a                                                  
+  data                         da(integral)   42    -                                                     
+    [0]                        integral       64    'h6c81347bfefbf858                                    
+    [1]                        integral       64    'h8a26f2358e919174                                    
+    [2]                        integral       64    'h500ab972cc3b0de9                                    
+    [3]                        integral       64    'h7a3b7b52ada61df2                                    
+    [4]                        integral       64    'h28691303e7e59423                                    
+    ...                        ...            ...   ...                                                   
+    [37]                       integral       64    'he0aa0244e25dd516                                    
+    [38]                       integral       64    'h391f24db3434ae2c                                    
+    [39]                       integral       64    'h76cb6fda95822304                                    
+    [40]                       integral       64    'h85f4aebaea7f8f90                                    
+    [41]                       integral       64    'h7a3d7a0899b30830                                    
+  begin_time                   time           64    550                                                   
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(125) @ 570: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port2:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4514             
+  data                da(integral)          18    -                 
+    [0]               integral              64    'h51a0a37d233f6f3f
+    [1]               integral              64    'h516da48aad9194dc
+    [2]               integral              64    'h775db3ac3aba79cb
+    [3]               integral              64    'h3df9c61662a6033a
+    [4]               integral              64    'hab300cb31efdb340
+    ...               ...                   ...   ...               
+    [13]              integral              64    'hda652dda520175e1
+    [14]              integral              64    'h5bd887ab7e81271a
+    [15]              integral              64    'he5a59e15b182576 
+    [16]              integral              64    'haedc33c897264b96
+    [17]              integral              64    'h7f04fd2b35a18a9a
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(130) @ 570: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 2
+UVM_INFO ../tb/htax_scoreboard_c.sv(133) @ 570: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 2
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h0               
+  vc                  integral              2     'h1               
+  length              integral              32    'h2a              
+  data                da(integral)          42    -                 
+    [0]               integral              64    'h6c81347bfefbf858
+    [1]               integral              64    'h8a26f2358e919174
+    [2]               integral              64    'h500ab972cc3b0de9
+    [3]               integral              64    'h7a3b7b52ada61df2
+    [4]               integral              64    'h28691303e7e59423
+    ...               ...                   ...   ...               
+    [37]              integral              64    'he0aa0244e25dd516
+    [38]              integral              64    'h391f24db3434ae2c
+    [39]              integral              64    'h76cb6fda95822304
+    [40]              integral              64    'h85f4aebaea7f8f90
+    [41]              integral              64    'h7a3d7a0899b30830
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(79) @ 1750: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 0:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 1750: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 1750: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8379                                                 
+  delay                        integral       32    'h3                                                   
+  dest_port                    integral       32    'h1                                                   
+  vc                           integral       2     'h2                                                   
+  length                       integral       32    'h3b                                                  
+  data                         da(integral)   59    -                                                     
+    [0]                        integral       64    'ha0c13bcdad66dc2b                                    
+    [1]                        integral       64    'h23c33da9a11eaa90                                    
+    [2]                        integral       64    'hc1f359cde522770e                                    
+    [3]                        integral       64    'h978e1e1df3ad4e63                                    
+    [4]                        integral       64    'h6b8c706dfcc18054                                    
+    ...                        ...            ...   ...                                                   
+    [54]                       integral       64    'h942488575e08d5b6                                    
+    [55]                       integral       64    'haa0ed6fa8db2c576                                    
+    [56]                       integral       64    'h357499583cbb7a8c                                    
+    [57]                       integral       64    'h48bafd216682ab46                                    
+    [58]                       integral       64    'h39feea8ca97ea480                                    
+  begin_time                   time           64    1750                                                  
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(99) @ 1770: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port0:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4326             
+  data                da(integral)          42    -                 
+    [0]               integral              64    'h6c81347bfefbf858
+    [1]               integral              64    'h8a26f2358e919174
+    [2]               integral              64    'h500ab972cc3b0de9
+    [3]               integral              64    'h7a3b7b52ada61df2
+    [4]               integral              64    'h28691303e7e59423
+    ...               ...                   ...   ...               
+    [37]              integral              64    'he0aa0244e25dd516
+    [38]              integral              64    'h391f24db3434ae2c
+    [39]              integral              64    'h76cb6fda95822304
+    [40]              integral              64    'h85f4aebaea7f8f90
+    [41]              integral              64    'h7a3d7a0899b30830
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(104) @ 1770: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 0
+UVM_INFO ../tb/htax_scoreboard_c.sv(107) @ 1770: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 0
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h1               
+  vc                  integral              2     'h2               
+  length              integral              32    'h3b              
+  data                da(integral)          59    -                 
+    [0]               integral              64    'ha0c13bcdad66dc2b
+    [1]               integral              64    'h23c33da9a11eaa90
+    [2]               integral              64    'hc1f359cde522770e
+    [3]               integral              64    'h978e1e1df3ad4e63
+    [4]               integral              64    'h6b8c706dfcc18054
+    ...               ...                   ...   ...               
+    [54]              integral              64    'h942488575e08d5b6
+    [55]              integral              64    'haa0ed6fa8db2c576
+    [56]              integral              64    'h357499583cbb7a8c
+    [57]              integral              64    'h48bafd216682ab46
+    [58]              integral              64    'h39feea8ca97ea480
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(83) @ 3070: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 1:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 3070: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 3070: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8251                                                 
+  delay                        integral       32    'ha                                                   
+  dest_port                    integral       32    'h0                                                   
+  vc                           integral       2     'h1                                                   
+  length                       integral       32    'he                                                   
+  data                         da(integral)   14    -                                                     
+    [0]                        integral       64    'hcf7abed2015a6e6d                                    
+    [1]                        integral       64    'h897e3ba5d85523bb                                    
+    [2]                        integral       64    'h4e0bb13a3c30925b                                    
+    [3]                        integral       64    'hed45e6f76e50573e                                    
+    [4]                        integral       64    'he51c507bd5e919aa                                    
+    ...                        ...            ...   ...                                                   
+    [9]                        integral       64    'h4e1337debd81c6b7                                    
+    [10]                       integral       64    'hc7eb06e143b802ff                                    
+    [11]                       integral       64    'heced16841f40e17f                                    
+    [12]                       integral       64    'hc06b05f53da904e0                                    
+    [13]                       integral       64    'h4faa5ed5de1355fa                                    
+  begin_time                   time           64    3070                                                  
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(112) @ 3090: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port1:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4421             
+  data                da(integral)          59    -                 
+    [0]               integral              64    'ha0c13bcdad66dc2b
+    [1]               integral              64    'h23c33da9a11eaa90
+    [2]               integral              64    'hc1f359cde522770e
+    [3]               integral              64    'h978e1e1df3ad4e63
+    [4]               integral              64    'h6b8c706dfcc18054
+    ...               ...                   ...   ...               
+    [54]              integral              64    'h942488575e08d5b6
+    [55]              integral              64    'haa0ed6fa8db2c576
+    [56]              integral              64    'h357499583cbb7a8c
+    [57]              integral              64    'h48bafd216682ab46
+    [58]              integral              64    'h39feea8ca97ea480
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(117) @ 3090: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 1
+UVM_INFO ../tb/htax_scoreboard_c.sv(120) @ 3090: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 1
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h0               
+  vc                  integral              2     'h1               
+  length              integral              32    'he               
+  data                da(integral)          14    -                 
+    [0]               integral              64    'hcf7abed2015a6e6d
+    [1]               integral              64    'h897e3ba5d85523bb
+    [2]               integral              64    'h4e0bb13a3c30925b
+    [3]               integral              64    'hed45e6f76e50573e
+    [4]               integral              64    'he51c507bd5e919aa
+    ...               ...                   ...   ...               
+    [9]               integral              64    'h4e1337debd81c6b7
+    [10]              integral              64    'hc7eb06e143b802ff
+    [11]              integral              64    'heced16841f40e17f
+    [12]              integral              64    'hc06b05f53da904e0
+    [13]              integral              64    'h4faa5ed5de1355fa
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(79) @ 3630: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 0:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 3630: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 3630: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8224                                                 
+  delay                        integral       32    'h14                                                  
+  dest_port                    integral       32    'h3                                                   
+  vc                           integral       2     'h2                                                   
+  length                       integral       32    'h2d                                                  
+  data                         da(integral)   45    -                                                     
+    [0]                        integral       64    'h19803554e7c45d41                                    
+    [1]                        integral       64    'h3dfb4eea5a9e6975                                    
+    [2]                        integral       64    'hc3f8a18517058f0e                                    
+    [3]                        integral       64    'h821e46d110867fc0                                    
+    [4]                        integral       64    'heb0e3c01ad9aafd5                                    
+    ...                        ...            ...   ...                                                   
+    [40]                       integral       64    'hfc81a0f06dd5d0a7                                    
+    [41]                       integral       64    'h5dc1b900d8c6c35                                     
+    [42]                       integral       64    'hc3091095b5d7e56                                     
+    [43]                       integral       64    'h9f46d54ea6d1735d                                    
+    [44]                       integral       64    'h551854f76fb9b9c5                                    
+  begin_time                   time           64    3630                                                  
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(99) @ 3650: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port0:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4326             
+  data                da(integral)          14    -                 
+    [0]               integral              64    'hcf7abed2015a6e6d
+    [1]               integral              64    'h897e3ba5d85523bb
+    [2]               integral              64    'h4e0bb13a3c30925b
+    [3]               integral              64    'hed45e6f76e50573e
+    [4]               integral              64    'he51c507bd5e919aa
+    ...               ...                   ...   ...               
+    [9]               integral              64    'h4e1337debd81c6b7
+    [10]              integral              64    'hc7eb06e143b802ff
+    [11]              integral              64    'heced16841f40e17f
+    [12]              integral              64    'hc06b05f53da904e0
+    [13]              integral              64    'h4faa5ed5de1355fa
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(104) @ 3650: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 0
+UVM_INFO ../tb/htax_scoreboard_c.sv(107) @ 3650: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 0
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h3               
+  vc                  integral              2     'h2               
+  length              integral              32    'h2d              
+  data                da(integral)          45    -                 
+    [0]               integral              64    'h19803554e7c45d41
+    [1]               integral              64    'h3dfb4eea5a9e6975
+    [2]               integral              64    'hc3f8a18517058f0e
+    [3]               integral              64    'h821e46d110867fc0
+    [4]               integral              64    'heb0e3c01ad9aafd5
+    ...               ...                   ...   ...               
+    [40]              integral              64    'hfc81a0f06dd5d0a7
+    [41]              integral              64    'h5dc1b900d8c6c35 
+    [42]              integral              64    'hc3091095b5d7e56 
+    [43]              integral              64    'h9f46d54ea6d1735d
+    [44]              integral              64    'h551854f76fb9b9c5
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(91) @ 5010: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 3:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 5010: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 5010: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8189                                                 
+  delay                        integral       32    'hc                                                   
+  dest_port                    integral       32    'h2                                                   
+  vc                           integral       2     'h2                                                   
+  length                       integral       32    'h1d                                                  
+  data                         da(integral)   29    -                                                     
+    [0]                        integral       64    'h6f5ea203ca11d281                                    
+    [1]                        integral       64    'hf6d851d7a1889d82                                    
+    [2]                        integral       64    'he43438ebd1015bb6                                    
+    [3]                        integral       64    'h81c159ebf71a2940                                    
+    [4]                        integral       64    'hb5a348c4400213c3                                    
+    ...                        ...            ...   ...                                                   
+    [24]                       integral       64    'ha509a50cfec96e92                                    
+    [25]                       integral       64    'h7d802147f96cb649                                    
+    [26]                       integral       64    'h827affee357e48e5                                    
+    [27]                       integral       64    'h4aa084b1ccec32cc                                    
+    [28]                       integral       64    'h28c92a0e4b24ca43                                    
+  begin_time                   time           64    5010                                                  
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(138) @ 5030: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port3:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4607             
+  data                da(integral)          45    -                 
+    [0]               integral              64    'h19803554e7c45d41
+    [1]               integral              64    'h3dfb4eea5a9e6975
+    [2]               integral              64    'hc3f8a18517058f0e
+    [3]               integral              64    'h821e46d110867fc0
+    [4]               integral              64    'heb0e3c01ad9aafd5
+    ...               ...                   ...   ...               
+    [40]              integral              64    'hfc81a0f06dd5d0a7
+    [41]              integral              64    'h5dc1b900d8c6c35 
+    [42]              integral              64    'hc3091095b5d7e56 
+    [43]              integral              64    'h9f46d54ea6d1735d
+    [44]              integral              64    'h551854f76fb9b9c5
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(143) @ 5030: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 3
+UVM_INFO ../tb/htax_scoreboard_c.sv(146) @ 5030: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 3
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h2               
+  vc                  integral              2     'h2               
+  length              integral              32    'h1d              
+  data                da(integral)          29    -                 
+    [0]               integral              64    'h6f5ea203ca11d281
+    [1]               integral              64    'hf6d851d7a1889d82
+    [2]               integral              64    'he43438ebd1015bb6
+    [3]               integral              64    'h81c159ebf71a2940
+    [4]               integral              64    'hb5a348c4400213c3
+    ...               ...                   ...   ...               
+    [24]              integral              64    'ha509a50cfec96e92
+    [25]              integral              64    'h7d802147f96cb649
+    [26]              integral              64    'h827affee357e48e5
+    [27]              integral              64    'h4aa084b1ccec32cc
+    [28]              integral              64    'h28c92a0e4b24ca43
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(87) @ 5910: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 2:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 5910: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 5910: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8281                                                 
+  delay                        integral       32    'h4                                                   
+  dest_port                    integral       32    'h0                                                   
+  vc                           integral       2     'h3                                                   
+  length                       integral       32    'h3c                                                  
+  data                         da(integral)   60    -                                                     
+    [0]                        integral       64    'hde9c85067f0da27b                                    
+    [1]                        integral       64    'h1098528e19ffee15                                    
+    [2]                        integral       64    'h9dab6ae61263fd65                                    
+    [3]                        integral       64    'h62755a93d8b4e87a                                    
+    [4]                        integral       64    'h4622aca11e5d82fe                                    
+    ...                        ...            ...   ...                                                   
+    [55]                       integral       64    'hc9d26a781c3e3053                                    
+    [56]                       integral       64    'h22256471c2a7fbcb                                    
+    [57]                       integral       64    'hd955cb9212c3b35e                                    
+    [58]                       integral       64    'hfbdc831ad4a2e9cd                                    
+    [59]                       integral       64    'h3fb64fb483b535e3                                    
+  begin_time                   time           64    5910                                                  
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(125) @ 5930: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port2:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4514             
+  data                da(integral)          29    -                 
+    [0]               integral              64    'h6f5ea203ca11d281
+    [1]               integral              64    'hf6d851d7a1889d82
+    [2]               integral              64    'he43438ebd1015bb6
+    [3]               integral              64    'h81c159ebf71a2940
+    [4]               integral              64    'hb5a348c4400213c3
+    ...               ...                   ...   ...               
+    [24]              integral              64    'ha509a50cfec96e92
+    [25]              integral              64    'h7d802147f96cb649
+    [26]              integral              64    'h827affee357e48e5
+    [27]              integral              64    'h4aa084b1ccec32cc
+    [28]              integral              64    'h28c92a0e4b24ca43
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(130) @ 5930: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 2
+UVM_INFO ../tb/htax_scoreboard_c.sv(133) @ 5930: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 2
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h0               
+  vc                  integral              2     'h3               
+  length              integral              32    'h3c              
+  data                da(integral)          60    -                 
+    [0]               integral              64    'hde9c85067f0da27b
+    [1]               integral              64    'h1098528e19ffee15
+    [2]               integral              64    'h9dab6ae61263fd65
+    [3]               integral              64    'h62755a93d8b4e87a
+    [4]               integral              64    'h4622aca11e5d82fe
+    ...               ...                   ...   ...               
+    [55]              integral              64    'hc9d26a781c3e3053
+    [56]              integral              64    'h22256471c2a7fbcb
+    [57]              integral              64    'hd955cb9212c3b35e
+    [58]              integral              64    'hfbdc831ad4a2e9cd
+    [59]              integral              64    'h3fb64fb483b535e3
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(79) @ 7270: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 0:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 7270: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 7270: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8159                                                 
+  delay                        integral       32    'h12                                                  
+  dest_port                    integral       32    'h3                                                   
+  vc                           integral       2     'h2                                                   
+  length                       integral       32    'h31                                                  
+  data                         da(integral)   49    -                                                     
+    [0]                        integral       64    'h59b35e352fecf8e1                                    
+    [1]                        integral       64    'h2eb842ed57182cfb                                    
+    [2]                        integral       64    'h17143fd32ed6f0a                                     
+    [3]                        integral       64    'hadf40e7cfead28b3                                    
+    [4]                        integral       64    'h9b4531bbb76ebffa                                    
+    ...                        ...            ...   ...                                                   
+    [44]                       integral       64    'hc35983b8da207d66                                    
+    [45]                       integral       64    'h9cdc78ab638eb13c                                    
+    [46]                       integral       64    'h7f93aa60c98654a                                     
+    [47]                       integral       64    'h860356ad59c583cf                                    
+    [48]                       integral       64    'hf6f0568cfecf9a20                                    
+  begin_time                   time           64    7270                                                  
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(99) @ 7290: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port0:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4326             
+  data                da(integral)          60    -                 
+    [0]               integral              64    'hde9c85067f0da27b
+    [1]               integral              64    'h1098528e19ffee15
+    [2]               integral              64    'h9dab6ae61263fd65
+    [3]               integral              64    'h62755a93d8b4e87a
+    [4]               integral              64    'h4622aca11e5d82fe
+    ...               ...                   ...   ...               
+    [55]              integral              64    'hc9d26a781c3e3053
+    [56]              integral              64    'h22256471c2a7fbcb
+    [57]              integral              64    'hd955cb9212c3b35e
+    [58]              integral              64    'hfbdc831ad4a2e9cd
+    [59]              integral              64    'h3fb64fb483b535e3
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(104) @ 7290: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 0
+UVM_INFO ../tb/htax_scoreboard_c.sv(107) @ 7290: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 0
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h3               
+  vc                  integral              2     'h2               
+  length              integral              32    'h31              
+  data                da(integral)          49    -                 
+    [0]               integral              64    'h59b35e352fecf8e1
+    [1]               integral              64    'h2eb842ed57182cfb
+    [2]               integral              64    'h17143fd32ed6f0a 
+    [3]               integral              64    'hadf40e7cfead28b3
+    [4]               integral              64    'h9b4531bbb76ebffa
+    ...               ...                   ...   ...               
+    [44]              integral              64    'hc35983b8da207d66
+    [45]              integral              64    'h9cdc78ab638eb13c
+    [46]              integral              64    'h7f93aa60c98654a 
+    [47]              integral              64    'h860356ad59c583cf
+    [48]              integral              64    'hf6f0568cfecf9a20
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(91) @ 8690: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 3:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 8690: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 8690: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8310                                                 
+  delay                        integral       32    'hf                                                   
+  dest_port                    integral       32    'h2                                                   
+  vc                           integral       2     'h1                                                   
+  length                       integral       32    'h33                                                  
+  data                         da(integral)   51    -                                                     
+    [0]                        integral       64    'hf0162ae17342abd9                                    
+    [1]                        integral       64    'h9b9a4895df43386f                                    
+    [2]                        integral       64    'h4f0bb5f2d73dc213                                    
+    [3]                        integral       64    'h389359644c388893                                    
+    [4]                        integral       64    'h7cc9c24d4f09f9cd                                    
+    ...                        ...            ...   ...                                                   
+    [46]                       integral       64    'hef3e71b4b268b4d9                                    
+    [47]                       integral       64    'hf4297c61b2eabd36                                    
+    [48]                       integral       64    'hc2460a0622d2d3a7                                    
+    [49]                       integral       64    'hccdc707cfb923570                                    
+    [50]                       integral       64    'hdad7c9e4989ca3ad                                    
+  begin_time                   time           64    8690                                                  
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(138) @ 8710: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port3:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4607             
+  data                da(integral)          49    -                 
+    [0]               integral              64    'h59b35e352fecf8e1
+    [1]               integral              64    'h2eb842ed57182cfb
+    [2]               integral              64    'h17143fd32ed6f0a 
+    [3]               integral              64    'hadf40e7cfead28b3
+    [4]               integral              64    'h9b4531bbb76ebffa
+    ...               ...                   ...   ...               
+    [44]              integral              64    'hc35983b8da207d66
+    [45]              integral              64    'h9cdc78ab638eb13c
+    [46]              integral              64    'h7f93aa60c98654a 
+    [47]              integral              64    'h860356ad59c583cf
+    [48]              integral              64    'hf6f0568cfecf9a20
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(143) @ 8710: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 3
+UVM_INFO ../tb/htax_scoreboard_c.sv(146) @ 8710: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 3
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h2               
+  vc                  integral              2     'h1               
+  length              integral              32    'h33              
+  data                da(integral)          51    -                 
+    [0]               integral              64    'hf0162ae17342abd9
+    [1]               integral              64    'h9b9a4895df43386f
+    [2]               integral              64    'h4f0bb5f2d73dc213
+    [3]               integral              64    'h389359644c388893
+    [4]               integral              64    'h7cc9c24d4f09f9cd
+    ...               ...                   ...   ...               
+    [46]              integral              64    'hef3e71b4b268b4d9
+    [47]              integral              64    'hf4297c61b2eabd36
+    [48]              integral              64    'hc2460a0622d2d3a7
+    [49]              integral              64    'hccdc707cfb923570
+    [50]              integral              64    'hdad7c9e4989ca3ad
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(87) @ 10090: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 2:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 10090: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 10090: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8268                                                 
+  delay                        integral       32    'hb                                                   
+  dest_port                    integral       32    'h3                                                   
+  vc                           integral       2     'h1                                                   
+  length                       integral       32    'h37                                                  
+  data                         da(integral)   55    -                                                     
+    [0]                        integral       64    'h90657091f2b3e366                                    
+    [1]                        integral       64    'h1efd26651289822e                                    
+    [2]                        integral       64    'hf65bd0ba5e54d8b4                                    
+    [3]                        integral       64    'hcfedae1cb1955f84                                    
+    [4]                        integral       64    'h5c79bfbeeec50fd8                                    
+    ...                        ...            ...   ...                                                   
+    [50]                       integral       64    'h78f9e3256ce14c2b                                    
+    [51]                       integral       64    'hf8f4958ba54eae6                                     
+    [52]                       integral       64    'h66f8b5075b03b185                                    
+    [53]                       integral       64    'hf795dea51517de5c                                    
+    [54]                       integral       64    'h8c8ddd551a32506d                                    
+  begin_time                   time           64    10090                                                 
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(125) @ 10110: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port2:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4514             
+  data                da(integral)          51    -                 
+    [0]               integral              64    'hf0162ae17342abd9
+    [1]               integral              64    'h9b9a4895df43386f
+    [2]               integral              64    'h4f0bb5f2d73dc213
+    [3]               integral              64    'h389359644c388893
+    [4]               integral              64    'h7cc9c24d4f09f9cd
+    ...               ...                   ...   ...               
+    [46]              integral              64    'hef3e71b4b268b4d9
+    [47]              integral              64    'hf4297c61b2eabd36
+    [48]              integral              64    'hc2460a0622d2d3a7
+    [49]              integral              64    'hccdc707cfb923570
+    [50]              integral              64    'hdad7c9e4989ca3ad
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(130) @ 10110: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 2
+UVM_INFO ../tb/htax_scoreboard_c.sv(133) @ 10110: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 2
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h3               
+  vc                  integral              2     'h1               
+  length              integral              32    'h37              
+  data                da(integral)          55    -                 
+    [0]               integral              64    'h90657091f2b3e366
+    [1]               integral              64    'h1efd26651289822e
+    [2]               integral              64    'hf65bd0ba5e54d8b4
+    [3]               integral              64    'hcfedae1cb1955f84
+    [4]               integral              64    'h5c79bfbeeec50fd8
+    ...               ...                   ...   ...               
+    [50]              integral              64    'h78f9e3256ce14c2b
+    [51]              integral              64    'hf8f4958ba54eae6 
+    [52]              integral              64    'h66f8b5075b03b185
+    [53]              integral              64    'hf795dea51517de5c
+    [54]              integral              64    'h8c8ddd551a32506d
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(91) @ 11490: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 3:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 11490: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 11490: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8160                                                 
+  delay                        integral       32    'ha                                                   
+  dest_port                    integral       32    'h2                                                   
+  vc                           integral       2     'h2                                                   
+  length                       integral       32    'h3f                                                  
+  data                         da(integral)   63    -                                                     
+    [0]                        integral       64    'h4c00a9bd049b7784                                    
+    [1]                        integral       64    'hf122197f90e2987c                                    
+    [2]                        integral       64    'h8780845f6932d0bb                                    
+    [3]                        integral       64    'ha66899d33e85561c                                    
+    [4]                        integral       64    'hc88bc8a78d0a22ba                                    
+    ...                        ...            ...   ...                                                   
+    [58]                       integral       64    'hc9c6a896baee1c48                                    
+    [59]                       integral       64    'h41b81f60e1d8d8f7                                    
+    [60]                       integral       64    'hf45ef96747701c7c                                    
+    [61]                       integral       64    'h9d1a9578978c7ba5                                    
+    [62]                       integral       64    'ha864a566ab0aad0a                                    
+  begin_time                   time           64    11490                                                 
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(138) @ 11510: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port3:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4607             
+  data                da(integral)          55    -                 
+    [0]               integral              64    'h90657091f2b3e366
+    [1]               integral              64    'h1efd26651289822e
+    [2]               integral              64    'hf65bd0ba5e54d8b4
+    [3]               integral              64    'hcfedae1cb1955f84
+    [4]               integral              64    'h5c79bfbeeec50fd8
+    ...               ...                   ...   ...               
+    [50]              integral              64    'h78f9e3256ce14c2b
+    [51]              integral              64    'hf8f4958ba54eae6 
+    [52]              integral              64    'h66f8b5075b03b185
+    [53]              integral              64    'hf795dea51517de5c
+    [54]              integral              64    'h8c8ddd551a32506d
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(143) @ 11510: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 3
+UVM_INFO ../tb/htax_scoreboard_c.sv(146) @ 11510: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 3
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h2               
+  vc                  integral              2     'h2               
+  length              integral              32    'h3f              
+  data                da(integral)          63    -                 
+    [0]               integral              64    'h4c00a9bd049b7784
+    [1]               integral              64    'hf122197f90e2987c
+    [2]               integral              64    'h8780845f6932d0bb
+    [3]               integral              64    'ha66899d33e85561c
+    [4]               integral              64    'hc88bc8a78d0a22ba
+    ...               ...                   ...   ...               
+    [58]              integral              64    'hc9c6a896baee1c48
+    [59]              integral              64    'h41b81f60e1d8d8f7
+    [60]              integral              64    'hf45ef96747701c7c
+    [61]              integral              64    'h9d1a9578978c7ba5
+    [62]              integral              64    'ha864a566ab0aad0a
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(87) @ 13030: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 2:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 13030: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 13030: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8339                                                 
+  delay                        integral       32    'hb                                                   
+  dest_port                    integral       32    'h0                                                   
+  vc                           integral       2     'h3                                                   
+  length                       integral       32    'h18                                                  
+  data                         da(integral)   24    -                                                     
+    [0]                        integral       64    'h1374d9161266920e                                    
+    [1]                        integral       64    'hc7a6fc41d3dc9d1d                                    
+    [2]                        integral       64    'hc2f3df20533798b6                                    
+    [3]                        integral       64    'he7ae38ca0fd2cdb3                                    
+    [4]                        integral       64    'hf940f2cde605035d                                    
+    ...                        ...            ...   ...                                                   
+    [19]                       integral       64    'h46ce44040f0a1e3b                                    
+    [20]                       integral       64    'h29db03252578c53                                     
+    [21]                       integral       64    'h9bfb43571f438c35                                    
+    [22]                       integral       64    'h904f2b67432213f1                                    
+    [23]                       integral       64    'h107667ef3bb251ec                                    
+  begin_time                   time           64    13030                                                 
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(125) @ 13050: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port2:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4514             
+  data                da(integral)          63    -                 
+    [0]               integral              64    'h4c00a9bd049b7784
+    [1]               integral              64    'hf122197f90e2987c
+    [2]               integral              64    'h8780845f6932d0bb
+    [3]               integral              64    'ha66899d33e85561c
+    [4]               integral              64    'hc88bc8a78d0a22ba
+    ...               ...                   ...   ...               
+    [58]              integral              64    'hc9c6a896baee1c48
+    [59]              integral              64    'h41b81f60e1d8d8f7
+    [60]              integral              64    'hf45ef96747701c7c
+    [61]              integral              64    'h9d1a9578978c7ba5
+    [62]              integral              64    'ha864a566ab0aad0a
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(130) @ 13050: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 2
+UVM_INFO ../tb/htax_scoreboard_c.sv(133) @ 13050: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 2
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h0               
+  vc                  integral              2     'h3               
+  length              integral              32    'h18              
+  data                da(integral)          24    -                 
+    [0]               integral              64    'h1374d9161266920e
+    [1]               integral              64    'hc7a6fc41d3dc9d1d
+    [2]               integral              64    'hc2f3df20533798b6
+    [3]               integral              64    'he7ae38ca0fd2cdb3
+    [4]               integral              64    'hf940f2cde605035d
+    ...               ...                   ...   ...               
+    [19]              integral              64    'h46ce44040f0a1e3b
+    [20]              integral              64    'h29db03252578c53 
+    [21]              integral              64    'h9bfb43571f438c35
+    [22]              integral              64    'h904f2b67432213f1
+    [23]              integral              64    'h107667ef3bb251ec
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(79) @ 13810: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 0:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 13810: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 13810: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8176                                                 
+  delay                        integral       32    'hc                                                   
+  dest_port                    integral       32    'h1                                                   
+  vc                           integral       2     'h3                                                   
+  length                       integral       32    'h25                                                  
+  data                         da(integral)   37    -                                                     
+    [0]                        integral       64    'hf4487ec2f2e00752                                    
+    [1]                        integral       64    'hff0edccc4863be43                                    
+    [2]                        integral       64    'h97a2d476c4a335b9                                    
+    [3]                        integral       64    'ha04c550dc275b04                                     
+    [4]                        integral       64    'hefe0740c8af3ef4e                                    
+    ...                        ...            ...   ...                                                   
+    [32]                       integral       64    'h1019915c6bad3a91                                    
+    [33]                       integral       64    'h2568df6d8e5d87d6                                    
+    [34]                       integral       64    'h8ce6901f2f78d23c                                    
+    [35]                       integral       64    'hcfe18b4ecb07e8f2                                    
+    [36]                       integral       64    'h890aee71097d491b                                    
+  begin_time                   time           64    13810                                                 
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(99) @ 13830: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port0:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4326             
+  data                da(integral)          24    -                 
+    [0]               integral              64    'h1374d9161266920e
+    [1]               integral              64    'hc7a6fc41d3dc9d1d
+    [2]               integral              64    'hc2f3df20533798b6
+    [3]               integral              64    'he7ae38ca0fd2cdb3
+    [4]               integral              64    'hf940f2cde605035d
+    ...               ...                   ...   ...               
+    [19]              integral              64    'h46ce44040f0a1e3b
+    [20]              integral              64    'h29db03252578c53 
+    [21]              integral              64    'h9bfb43571f438c35
+    [22]              integral              64    'h904f2b67432213f1
+    [23]              integral              64    'h107667ef3bb251ec
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(104) @ 13830: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 0
+UVM_INFO ../tb/htax_scoreboard_c.sv(107) @ 13830: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 0
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h1               
+  vc                  integral              2     'h3               
+  length              integral              32    'h25              
+  data                da(integral)          37    -                 
+    [0]               integral              64    'hf4487ec2f2e00752
+    [1]               integral              64    'hff0edccc4863be43
+    [2]               integral              64    'h97a2d476c4a335b9
+    [3]               integral              64    'ha04c550dc275b04 
+    [4]               integral              64    'hefe0740c8af3ef4e
+    ...               ...                   ...   ...               
+    [32]              integral              64    'h1019915c6bad3a91
+    [33]              integral              64    'h2568df6d8e5d87d6
+    [34]              integral              64    'h8ce6901f2f78d23c
+    [35]              integral              64    'hcfe18b4ecb07e8f2
+    [36]              integral              64    'h890aee71097d491b
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(83) @ 14870: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 1:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 14870: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 14870: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8235                                                 
+  delay                        integral       32    'hb                                                   
+  dest_port                    integral       32    'h0                                                   
+  vc                           integral       2     'h2                                                   
+  length                       integral       32    'h2e                                                  
+  data                         da(integral)   46    -                                                     
+    [0]                        integral       64    'hcf95a02378e22b05                                    
+    [1]                        integral       64    'h2956fdee1943f77                                     
+    [2]                        integral       64    'h868180df743584e5                                    
+    [3]                        integral       64    'h64c077e5dd17c0be                                    
+    [4]                        integral       64    'h1cec77f0f42e8863                                    
+    ...                        ...            ...   ...                                                   
+    [41]                       integral       64    'hf3c03c06ad8cea87                                    
+    [42]                       integral       64    'ha31f53c3adf8d012                                    
+    [43]                       integral       64    'hfbbe2553004fea5e                                    
+    [44]                       integral       64    'h81a88f376803a379                                    
+    [45]                       integral       64    'h897f80bf6cc67156                                    
+  begin_time                   time           64    14870                                                 
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(112) @ 14890: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port1:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4421             
+  data                da(integral)          37    -                 
+    [0]               integral              64    'hf4487ec2f2e00752
+    [1]               integral              64    'hff0edccc4863be43
+    [2]               integral              64    'h97a2d476c4a335b9
+    [3]               integral              64    'ha04c550dc275b04 
+    [4]               integral              64    'hefe0740c8af3ef4e
+    ...               ...                   ...   ...               
+    [32]              integral              64    'h1019915c6bad3a91
+    [33]              integral              64    'h2568df6d8e5d87d6
+    [34]              integral              64    'h8ce6901f2f78d23c
+    [35]              integral              64    'hcfe18b4ecb07e8f2
+    [36]              integral              64    'h890aee71097d491b
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(117) @ 14890: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 1
+UVM_INFO ../tb/htax_scoreboard_c.sv(120) @ 14890: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 1
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h0               
+  vc                  integral              2     'h2               
+  length              integral              32    'h2e              
+  data                da(integral)          46    -                 
+    [0]               integral              64    'hcf95a02378e22b05
+    [1]               integral              64    'h2956fdee1943f77 
+    [2]               integral              64    'h868180df743584e5
+    [3]               integral              64    'h64c077e5dd17c0be
+    [4]               integral              64    'h1cec77f0f42e8863
+    ...               ...                   ...   ...               
+    [41]              integral              64    'hf3c03c06ad8cea87
+    [42]              integral              64    'ha31f53c3adf8d012
+    [43]              integral              64    'hfbbe2553004fea5e
+    [44]              integral              64    'h81a88f376803a379
+    [45]              integral              64    'h897f80bf6cc67156
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(79) @ 16090: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 0:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 16090: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(59) @ 16090: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Input Data Packet to DUT : 
+----------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                                 
+----------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @8347                                                 
+  delay                        integral       32    'h11                                                  
+  dest_port                    integral       32    'h2                                                   
+  vc                           integral       2     'h3                                                   
+  length                       integral       32    'h10                                                  
+  data                         da(integral)   16    -                                                     
+    [0]                        integral       64    'hd78e2f79e7b58347                                    
+    [1]                        integral       64    'h8d1f555b65cf1b80                                    
+    [2]                        integral       64    'hef53b62d488ed342                                    
+    [3]                        integral       64    'h31024eab155ceeb4                                    
+    [4]                        integral       64    'h649125e5525d3eec                                    
+    ...                        ...            ...   ...                                                   
+    [11]                       integral       64    'heb801459dffafeab                                    
+    [12]                       integral       64    'hef63fbcdb7446513                                    
+    [13]                       integral       64    'hfac1f1515f88b3a8                                    
+    [14]                       integral       64    'h35c2382347b3a0ce                                    
+    [15]                       integral       64    'h84e84cf42cca975f                                    
+  begin_time                   time           64    16090                                                 
+  depth                        int            32    'd2                                                   
+  parent sequence (name)       string         17    simple_random_seq                                     
+  parent sequence (full name)  string         54    uvm_test_top.tb.tx_port[1].sequencer.simple_random_seq
+  sequencer                    string         36    uvm_test_top.tb.tx_port[1].sequencer                  
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_scoreboard_c.sv(99) @ 16110: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port0:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4326             
+  data                da(integral)          46    -                 
+    [0]               integral              64    'hcf95a02378e22b05
+    [1]               integral              64    'h2956fdee1943f77 
+    [2]               integral              64    'h868180df743584e5
+    [3]               integral              64    'h64c077e5dd17c0be
+    [4]               integral              64    'h1cec77f0f42e8863
+    ...               ...                   ...   ...               
+    [41]              integral              64    'hf3c03c06ad8cea87
+    [42]              integral              64    'ha31f53c3adf8d012
+    [43]              integral              64    'hfbbe2553004fea5e
+    [44]              integral              64    'h81a88f376803a379
+    [45]              integral              64    'h897f80bf6cc67156
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(104) @ 16110: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 0
+UVM_INFO ../tb/htax_scoreboard_c.sv(107) @ 16110: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 0
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_tx_mon_packet_c  htax_tx_mon_packet_c  -     @5589             
+  dest_port           integral              32    'h2               
+  vc                  integral              2     'h3               
+  length              integral              32    'h10              
+  data                da(integral)          16    -                 
+    [0]               integral              64    'hd78e2f79e7b58347
+    [1]               integral              64    'h8d1f555b65cf1b80
+    [2]               integral              64    'hef53b62d488ed342
+    [3]               integral              64    'h31024eab155ceeb4
+    [4]               integral              64    'h649125e5525d3eec
+    ...               ...                   ...   ...               
+    [11]              integral              64    'heb801459dffafeab
+    [12]              integral              64    'hef63fbcdb7446513
+    [13]              integral              64    'hfac1f1515f88b3a8
+    [14]              integral              64    'h35c2382347b3a0ce
+    [15]              integral              64    'h84e84cf42cca975f
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(87) @ 16830: uvm_test_top.tb.htax_sb [SCOREBOARD] Adding pkt in queue 2:
+UVM_INFO ../tb/htax_tx_driver_c.sv(118) @ 16830: uvm_test_top.tb.tx_port[1].tx_driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_seqs.sv(25) @ 16830: uvm_test_top.tb.tx_port[1].sequencer@@simple_random_seq [simple_random_seq] drop_objection
+UVM_INFO ../tb/htax_scoreboard_c.sv(125) @ 16850: uvm_test_top.tb.htax_sb [SCOREBOARD] Received Data Packet on Port2:
+--------------------------------------------------------------------
+Name                  Type                  Size  Value             
+--------------------------------------------------------------------
+htax_rx_mon_packet_c  htax_rx_mon_packet_c  -     @4514             
+  data                da(integral)          16    -                 
+    [0]               integral              64    'hd78e2f79e7b58347
+    [1]               integral              64    'h8d1f555b65cf1b80
+    [2]               integral              64    'hef53b62d488ed342
+    [3]               integral              64    'h31024eab155ceeb4
+    [4]               integral              64    'h649125e5525d3eec
+    ...               ...                   ...   ...               
+    [11]              integral              64    'heb801459dffafeab
+    [12]              integral              64    'hef63fbcdb7446513
+    [13]              integral              64    'hfac1f1515f88b3a8
+    [14]              integral              64    'h35c2382347b3a0ce
+    [15]              integral              64    'h84e84cf42cca975f
+--------------------------------------------------------------------
+UVM_INFO ../tb/htax_scoreboard_c.sv(130) @ 16850: uvm_test_top.tb.htax_sb [SCOREBOARD] Data matches for received pkt on port 2
+UVM_INFO ../tb/htax_scoreboard_c.sv(133) @ 16850: uvm_test_top.tb.htax_sb [SCOREBOARD] Dropping pkt from queue 2
+UVM_INFO /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 66830: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../tb/htax_scoreboard_c.sv(150) @ 66830: uvm_test_top.tb.htax_sb [SCOREBOARD] End of Simulation Checking
+UVM_INFO ../tb/htax_scoreboard_c.sv(152) @ 66830: uvm_test_top.tb.htax_sb [SCOREBOARD] Port 0 Queue is empty
+UVM_INFO ../tb/htax_scoreboard_c.sv(156) @ 66830: uvm_test_top.tb.htax_sb [SCOREBOARD] Port 1 Queue is empty
+UVM_INFO ../tb/htax_scoreboard_c.sv(160) @ 66830: uvm_test_top.tb.htax_sb [SCOREBOARD] Port 2 Queue is empty
+UVM_INFO ../tb/htax_scoreboard_c.sv(164) @ 66830: uvm_test_top.tb.htax_sb [SCOREBOARD] Port 3 Queue is empty
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  107
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SCOREBOARD]    65
+[TEST_DONE]     1
+[TOP]     5
+[UVMTOP]     1
+[htax_tx_driver_c]    30
+[simple_random_seq]     3
+[simple_random_test]     1
+Simulation complete via $finish(1) at time 66830 NS + 45
+/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+
+coverage setup:
+  workdir  :  /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_1/cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test_sv145560361
+
+coverage files:
+  model(design data) :  /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/model_dir/icc_4e8e3c4e_7997b529.ucm
+  data               :  /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_1/cov_work/scope/test_sv145560361/icc_4e8e3c4e_7997b529.ucd
+TOOL:	xrun	22.03-s012: Exiting on Nov 24, 2024 at 13:05:53 CST  (total: 00:00:09)
+  Wrote vManager metrics information to /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_1/cov_work/scope/test_sv145560361/cdns_sim.vsof
+
+ Intermediate vsof file located at /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_1/.SRvSof/xmsim_2024_11_24_13_05_52.vsof is deleted
+RUN - INFO - Starting scanning
+vm_srmp: *N,START: vManager Single Run Metrics Processor...
+
+--------------------------------------------------------------------
+-- Phase: Reading Input vSofs
+--------------------------------------------------------------------
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/export0.vsof
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/export1.vsof
+vm_srmp: *N,READ: Reading vSof ${BRUN_RUN_DIR}/.SRvSof/xmvlog_2024_11_24_13_05_45.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/export0.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/export1.vsof
+vm_srmp: *N,IMPORT: Import results from ${BRUN_RUN_DIR}/.SRvSof/xmvlog_2024_11_24_13_05_45.vsof
+
+--------------------------------------------------------------------
+-- Phase: User Scanning
+--------------------------------------------------------------------
+vm_srmp: *N,EXEC: vm_scan.pl ius.flt shell.flt 
+vm_scan.pl: Scanning information:
+  Log file: local_log.log
+  Filter files:
+    1. ius.flt
+    2. shell.flt
+vm_scan.pl: total of 11 patterns extracted.
+Wrote ./.vm_scan.n01-zeus.olympus.ece.tamu.edu.3396388.1/vm_scan_24_13_5_53.vsof
+vm_srmp: *N,READ: Reading vSof ./.vm_scan.n01-zeus.olympus.ece.tamu.edu.3396388.1/vm_scan_24_13_5_53.vsof
+vm_srmp: *N,IMPORT: Import results from ./.vm_scan.n01-zeus.olympus.ece.tamu.edu.3396388.1/vm_scan_24_13_5_53.vsof
+
+--------------------------------------------------------------------
+-- Phase: Complementary Scanning
+--------------------------------------------------------------------
+vm_srmp: *N,EXEC: vm_scan.pl  /opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt /opt/coe/cadence/XCELIUM/tools/bin/ovm_sv_lib.flt /opt/coe/cadence/VMANAGER/tools/vmgr/runner/bin/vm.flt 
+vm_scan.pl: Scanning information:
+  Log file: local_log.log
+  Filter files:
+    1. /opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt
+    2. /opt/coe/cadence/XCELIUM/tools/bin/ovm_sv_lib.flt
+    3. vm.flt
+vm_scan.pl: total of 12 patterns extracted.
+Wrote ./.vm_scan.n01-zeus.olympus.ece.tamu.edu.3396388.2/vm_scan_24_13_5_53.vsof
+vm_srmp: *N,READ: Reading vSof ./.vm_scan.n01-zeus.olympus.ece.tamu.edu.3396388.2/vm_scan_24_13_5_53.vsof
+vm_srmp: *N,IMPORT: Import results from ./.vm_scan.n01-zeus.olympus.ece.tamu.edu.3396388.2/vm_scan_24_13_5_53.vsof
+
+--------------------------------------------------------------------
+-- Phase: Writing Single Run vSof
+--------------------------------------------------------------------
+vm_srmp: *N,WRITE: Writing vSof ${BRUN_RUN_DIR}/local_vsof.txt
+vm_srmp: *N,COMPLETE: vManager Single Run Metrics Processor completed successfully
+RUN - INFO - Run done.

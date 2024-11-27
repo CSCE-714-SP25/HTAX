@@ -1,0 +1,284 @@
+extend 4 {
+	user_time: <text>1715</text>;
+	system_time: <text>609</text>;
+	cpu_time: <text>2324</text>;
+	simulation_time: <text>0</text>;
+}
+
+extend 4 {
+        end_time : <text>1732475175</text>;
+        engine : <text>xmsim</text>;
+        log_file : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/xrun.log<__SEPARATOR__>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/xrun.log<__SEPARATOR__>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/cov_work/scope/test_sv1689069325/xrun.log<__SEPARATOR__>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log<__SEPARATOR__>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+        parent_run : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/htax_regress.vsof:htax_regress/all_test/test4@3</text>;
+        run_id : 4;
+        run_type : <text>simulation</text>;
+        simulation_time : 65110000000;
+        simulator : <text>xmvlog</text>;
+        sv_seed : 1689069325;
+        verification_scope : <text>default</text>;
+
+        filter "xmvlog" {
+                filter_files : <text>cdns_sim.flt ovm_sv_lib.flt</text>;
+                filter_id : <text>xmvlog</text>;
+                log_file : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/xrun.log</text>;
+        }
+
+        filter "xmelab" {
+                filter_files : <text>cdns_sim.flt ovm_sv_lib.flt</text>;
+                filter_id : <text>xmelab</text>;
+                log_file : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/xrun.log</text>;
+        }
+
+        filter "xmsim" {
+                filter_files : <text>cdns_sim.flt ovm_sv_lib.flt</text>;
+                filter_id : <text>xmsim</text>;
+                log_file : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/cov_work/scope/test_sv1689069325/xrun.log</text>;
+        }
+
+        coverage_model "xmsim" {
+                tool_name : <text>xmsim</text>;
+                ucm_checksum : <text>4e8e3c4e_7997b529</text>;
+                ucm_file : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/model_dir/icc_4e8e3c4e_7997b529.ucm</text>;
+                verification_scope : <text>default</text>;
+        }
+
+        coverage_data "xmsim" {
+                tool_name : <text>xmsim</text>;
+                ucd_file : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/cov_work/scope/test_sv1689069325/icc_4e8e3c4e_7997b529.ucd</text>;
+                ucm_checksum : <text>4e8e3c4e_7997b529</text>;
+                verification_scope : <text>default</text>;
+        }
+
+        action_attribute "status" {
+                menu_item : <text>Show waveform</text>;
+                name : <text>status</text>;
+                system : <text>simvision /home/faculty/d/davidkebo/csce-714/HTAX/work/sim/waves.shm</text>;
+                tooltip : <text>Open Simvision waveform viewer with run's data</text>;
+        }
+
+        filter "xmvlog" {
+                filter_files : <text>cdns_sim.flt ovm_sv_lib.flt</text>;
+                filter_id : <text>xmvlog</text>;
+        }
+
+        failure F0 {
+                description : <text>Include directory ../design given but not used.</text>;
+                failure_id : <text>F0</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>SPDUSD</text>;
+                reference : <text>12@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmvlog</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F1 {
+                description : <text>This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.</text>;
+                failure_id : <text>F1</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>DSEMEL</text>;
+                reference : <text>25@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F2 {
+                description : <text>Block and Expression coverage types are not supported inside SystemVerilog classes. Use CCF command to enable type-based block and expression control coverage. There may also be other such classes in the design.</text>;
+                failure_id : <text>F2</text>;
+                filter_reference : <text>110@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>COVUCC</text>;
+                module : <text>/home/grads/s/sushan_1201/lab-10-solution/work/tb/htax_env.sv,1|13</text>;
+                reference : <text>35@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F3 {
+                description : <text>By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.</text>;
+                failure_id : <text>F3</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>COVDCL</text>;
+                reference : <text>38@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F4 {
+                description : <text>Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.</text>;
+                failure_id : <text>F4</text>;
+                filter_reference : <text>110@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>COVMDD</text>;
+                module : <text>/home/grads/s/sushan_1201/lab-10-solution/work/design/htax_outport_arbiter.v,60|20</text>;
+                reference : <text>39@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F5 {
+                description : <text>Toggle coverage is not supported for SystemVerilog integer, real, string, dynamic array, sparse memory and reference ports. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.</text>;
+                failure_id : <text>F5</text>;
+                filter_reference : <text>110@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>COVUTA</text>;
+                module : <text>/home/grads/s/sushan_1201/lab-10-solution/work/tb/htax_rx_interface.sv,22|25</text>;
+                reference : <text>40@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F6 {
+                description : <text>Covergroup "per_instance" option , by default, is set as 0.</text>;
+                failure_id : <text>F6</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>CGPIDF</text>;
+                reference : <text>42@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F7 {
+                description : <text>This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.</text>;
+                failure_id : <text>F7</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>DSEM2009</text>;
+                reference : <text>66@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmsim</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F8 {
+                description : <text>(-FUNCTION) Database must be opened in -EVENT mode to capture calling scope data.</text>;
+                failure_id : <text>F8</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/ius.flt</text>;
+                kind : <text>PRFRTNEV</text>;
+                reference : <text>73@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmsim</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        filter "vm_scan" {
+                filter_files : <text>/opt/coe/cadence/XCELIUM/tools/bin/ius.flt /opt/coe/cadence/VMANAGER/tools/vmgr/runner/bin/shell.flt</text>;
+                filter_id : <text>vm_scan</text>;
+                log_file : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+        }
+
+        failure F0 {
+                description : <text>Include directory ../design given but not used.</text>;
+                failure_id : <text>F0</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>SPDUSD</text>;
+                reference : <text>12@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmvlog</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F1 {
+                description : <text>This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.</text>;
+                failure_id : <text>F1</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>DSEMEL</text>;
+                reference : <text>25@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F2 {
+                description : <text>Block and Expression coverage types are not supported inside SystemVerilog classes. Use CCF command to enable type-based block and expression control coverage. There may also be other such classes in the design.</text>;
+                failure_id : <text>F2</text>;
+                filter_reference : <text>110@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>COVUCC</text>;
+                module : <text>/home/grads/s/sushan_1201/lab-10-solution/work/tb/htax_env.sv,1|13</text>;
+                reference : <text>35@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F3 {
+                description : <text>By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.</text>;
+                failure_id : <text>F3</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>COVDCL</text>;
+                reference : <text>38@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F4 {
+                description : <text>Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.</text>;
+                failure_id : <text>F4</text>;
+                filter_reference : <text>110@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>COVMDD</text>;
+                module : <text>/home/grads/s/sushan_1201/lab-10-solution/work/design/htax_outport_arbiter.v,60|20</text>;
+                reference : <text>39@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F5 {
+                description : <text>Toggle coverage is not supported for SystemVerilog integer, real, string, dynamic array, sparse memory and reference ports. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.</text>;
+                failure_id : <text>F5</text>;
+                filter_reference : <text>110@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>COVUTA</text>;
+                module : <text>/home/grads/s/sushan_1201/lab-10-solution/work/tb/htax_rx_interface.sv,22|25</text>;
+                reference : <text>40@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F6 {
+                description : <text>Covergroup "per_instance" option , by default, is set as 0.</text>;
+                failure_id : <text>F6</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>CGPIDF</text>;
+                reference : <text>42@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmelab</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F7 {
+                description : <text>This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.</text>;
+                failure_id : <text>F7</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>DSEM2009</text>;
+                reference : <text>66@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmsim</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        failure F8 {
+                description : <text>(-FUNCTION) Database must be opened in -EVENT mode to capture calling scope data.</text>;
+                failure_id : <text>F8</text>;
+                filter_reference : <text>101@/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt</text>;
+                kind : <text>PRFRTNEV</text>;
+                reference : <text>73@/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+                severity : <text>warning</text>;
+                tool : <text>xmsim</text>;
+                failure_source_type_vmgr: <text>run</text>;
+        }
+
+        filter "vm_scan" {
+                filter_files : <text>/opt/coe/cadence/XCELIUM/tools/bin/cdns_sim.flt /opt/coe/cadence/XCELIUM/tools/bin/ovm_sv_lib.flt /opt/coe/cadence/XCELIUM/tools/bin/uvm.flt /opt/coe/cadence/VMANAGER/tools/vmgr/runner/bin/vm.flt</text>;
+                filter_id : <text>vm_scan</text>;
+                log_file : <text>/home/faculty/d/davidkebo/csce-714/HTAX/work/sim/regression/htax_regress.davidkebo.24_11_24_13_05_24_3569/chain_0/all_test/run_4/local_log.log</text>;
+        }
+}
+extend 4 {
+	status: <text>finished</text>;
+	job_status: <text>finished</text>;
+	end_time: <text>1732475176</text>;
+}

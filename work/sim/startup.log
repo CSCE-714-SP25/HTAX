@@ -1,0 +1,19 @@
+java.lang.RuntimeException: Failed to initialize license api
+	at com.cadence.mdv.central.utils.license.SharedLicenseBridgeHandler.getLmApiInstanceOne(SharedLicenseBridgeHandler.java:72)
+	at com.cadence.mdv.central.utils.license.SharedLicenseBridgeHandler.fullSync(SharedLicenseBridgeHandler.java:127)
+	at com.cadence.mdv.central.utils.license.SharedLicenseBridgeHandler.acquire(SharedLicenseBridgeHandler.java:161)
+	at com.cadence.mdv.license.bridge.LicenseControlBridge.acquire(LicenseControlBridge.java:42)
+	at com.cadence.mdv.license.acquirer.AbstractAcquirer.pushAcquire0(AbstractAcquirer.java:34)
+	at com.cadence.mdv.license.acquirer.RemoteClientAcquirer._implInitialLicenseAcquire(RemoteClientAcquirer.java:51)
+	at com.cadence.mdv.license.acquirer.AbstractAcquirer.doLicenseAcquire(AbstractAcquirer.java:73)
+	at com.cadence.mdv.license.acquirer.RemoteClientAcquirer.doLicenseAcquire(RemoteClientAcquirer.java:18)
+	at com.cadence.mdv.imc.Main.lambda$createPreGUIRunnable$2(Main.java:613)
+	at com.cadence.ufi.GUFIManager.runMain(GUFIManager.java:443)
+	at com.cadence.mdv.imc.Main.main(Main.java:515)
+Caused by: com.cadence.softshare.model.LmApiException: (LMC-01902): License call failed . The license server search path is defined as null. Can't find license file
+
+Run 'lic_error LMC-01902' for more information.
+	at com.cadence.softshare.service.LmApi.<init>(Unknown Source)
+	at com.cadence.softshare.service.LmApi.getInstance(Unknown Source)
+	at com.cadence.mdv.central.utils.license.SharedLicenseBridgeHandler.getLmApiInstanceOne(SharedLicenseBridgeHandler.java:70)
+	... 10 more
